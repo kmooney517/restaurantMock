@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="small-4 columns">
+    <p>{{vm.newsTitle}} | {{vm.date}}</p>
+    <hr>
+    <p>{{vm.description}}</p>
+  </div>
+
+  <div class="small-4 columns">
+    <p>Today's Special</p>
+    <p>{{vm.specialItem}}</p>
+    <p>${{vm.price}}</p>
+    <hr>
+    <img ng-src="http://placehold.it/400x200">
+    <p>{{vm.specialDescription}}</p>
+  </div>
+
+  <div class="small-4 columns">
+    <p>Our Location</p>
+    <hr>
+    <img ng-src="http://placehold.it/400x400">
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <h3>Menu</h3>
+
+  <h5>Appetizers</h5>
+
+  <ul ng-repeat="app in vm.apps">
+    <li>{{app.item}}</li>
+  </ul>
+
+  <h5>Entrees</h5>
+
+  <ul ng-repeat="entree in vm.entrees">
+    <li>{{entree.item}}</li>
+  </ul>  
+
+  <h5>Sides</h5>
+
+  <ul ng-repeat="side in vm.sides">
+    <li>{{side.item}}</li>
+  </ul>
+</div>
